@@ -1,13 +1,24 @@
 wechat.mp.client:
-  - name: test
+  - name: "test"
     config:
-      appid: testAppid
-      secret: testSecret
-      token: testToken
-      aesKey: testAesKey
-  - name: test2
+      appid: "testAppid"
+      secret: "testSecret"
+      token: "testToken"
+      aesKey: "testAesKey"
+  - name: "test2"
     config:
-      appid: testAppid2
-      secret: testSecret2
-      token: testToken2
-      aesKey: testAesKey2
+      appid: "testAppid2"
+      secret: "testSecret2"
+      token: "testToken2"
+      aesKey: "testAesKey2"
+
+wechat.mp.rules:
+    - name: "test"
+      end: true
+      async: true
+      fromUser: "zhuangqf"
+      msgType: "type"
+      event: "love"
+      handlers:
+          - "class1"
+          - "class2"

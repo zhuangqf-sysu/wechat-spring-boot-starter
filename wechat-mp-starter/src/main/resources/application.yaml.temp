@@ -1,3 +1,4 @@
+wechat.mp.url:
 wechat.mp.client:
   - name:
     config:
@@ -5,4 +6,24 @@ wechat.mp.client:
       secret:
       token:
       aesKey:
+    router:
+      -
 
+
+wechat.mp.rules:
+    - name:
+      end:
+      async:
+      fromUser:
+      msgType:
+      event:
+      eventKey:
+      eventKeyRegex:
+      content:
+      rContent:
+      matcherClass:
+      reEnter:
+      handlers:
+          - handlerClass:
+      interceptors:
+          - interceptorClass:

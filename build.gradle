@@ -24,6 +24,8 @@ subprojects{
     }
 
     dependencies {
+
+        compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
         compile "org.springframework.boot:spring-boot-autoconfigure:${springBootVersion}"
         compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.21'
 
