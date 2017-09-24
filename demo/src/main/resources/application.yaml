@@ -5,4 +5,9 @@ wechat.mp.client:
       secret: testSecret
       token: testToken
       aesKey: testAesKey
-
+  - name: test2
+    config:
+      appid: testAppid2
+      secret: testSecret2
+      token: testToken2
+      aesKey: testAesKey2

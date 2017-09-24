@@ -14,7 +14,7 @@ import javax.annotation.Resource;
  */
 @Configuration
 @EnableConfigurationProperties({WxMpProperties.class})
-public class WxMpAntoConfiguration {
+public class WxMpAutoConfiguration {
 
     @Resource
     private WxMpProperties wxMpProperties;

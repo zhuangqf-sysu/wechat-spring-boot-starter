@@ -1,6 +1,7 @@
 package com.zhuangqf.wechat.demo.controller;
 
 import com.zhuangqf.wechat.factory.WxMpServiceFactory;
+import me.chanjar.weixin.mp.api.WxMpService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,13 +20,22 @@ public class MpController {
     @Resource
     private WxMpServiceFactory mpServiceFactory;
 
+    @Resource
+    private WxMpService mpService;
 
-    @RequestMapping("service")
-    public String service(){
+
+    @RequestMapping("serviceFactory")
+    public String serviceFactory(){
         for(String name:mpServiceFactory.keySet()){
+            System.out.println(name+":"+mpServiceFactory.getService(name).toString());
             logger.debug(name,mpServiceFactory.getService(name));
         }
         return mpServiceFactory.keySet().toString();
+    }
+
+    @RequestMapping("service")
+    public String service(){
+        return mpService.toString();
     }
 
 }
