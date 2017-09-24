@@ -1,0 +1,5 @@
+rootProject.name = 'wechat-spring-boot-starter'
+include 'wechat-pay-starter'
+include 'wechat-mp-starter'
+include 'demo'
+

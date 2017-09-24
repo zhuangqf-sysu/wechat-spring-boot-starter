@@ -1,0 +1,6 @@
+group 'com.zhuangqf'
+version '1.0.0-SNAPSHOT'
+
+dependencies {
+    compile "com.github.binarywang:weixin-java-mp:${weixinJavaVersion}"
+}

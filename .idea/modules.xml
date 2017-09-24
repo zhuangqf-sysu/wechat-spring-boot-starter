@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/demo/demo.iml" filepath="$PROJECT_DIR$/.idea/modules/demo/demo.iml" group="demo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/demo/demo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/demo/demo_main.iml" group="demo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/demo/demo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/demo/demo_test.iml" group="demo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wechat-mp-starter/wechat-mp-starter.iml" filepath="$PROJECT_DIR$/.idea/modules/wechat-mp-starter/wechat-mp-starter.iml" group="wechat-mp-starter" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wechat-mp-starter/wechat-mp-starter_main.iml" filepath="$PROJECT_DIR$/.idea/modules/wechat-mp-starter/wechat-mp-starter_main.iml" group="wechat-mp-starter" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wechat-mp-starter/wechat-mp-starter_test.iml" filepath="$PROJECT_DIR$/.idea/modules/wechat-mp-starter/wechat-mp-starter_test.iml" group="wechat-mp-starter" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wechat-pay-starter/wechat-pay-starter.iml" filepath="$PROJECT_DIR$/.idea/modules/wechat-pay-starter/wechat-pay-starter.iml" group="wechat-pay-starter" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wechat-pay-starter/wechat-pay-starter_main.iml" filepath="$PROJECT_DIR$/.idea/modules/wechat-pay-starter/wechat-pay-starter_main.iml" group="wechat-pay-starter" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wechat-pay-starter/wechat-pay-starter_test.iml" filepath="$PROJECT_DIR$/.idea/modules/wechat-pay-starter/wechat-pay-starter_test.iml" group="wechat-pay-starter" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wechat-spring-boot-starter.iml" filepath="$PROJECT_DIR$/.idea/modules/wechat-spring-boot-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wechat-spring-boot-starter_main.iml" filepath="$PROJECT_DIR$/.idea/modules/wechat-spring-boot-starter_main.iml" group="wechat-spring-boot-starter" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wechat-spring-boot-starter_test.iml" filepath="$PROJECT_DIR$/.idea/modules/wechat-spring-boot-starter_test.iml" group="wechat-spring-boot-starter" />
+    </modules>
+  </component>
+</project>
