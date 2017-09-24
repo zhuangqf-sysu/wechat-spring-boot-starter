@@ -64,7 +64,7 @@ public class WxMpDefaultAutoConfiguration {
         List<WxMpMessageRuleProperties> rules = wxMpProperties.getRules();
         for(WxMpMessageRuleProperties properties:rules){
             if(!properties.isAsync()) rule = rule.async(properties.isAsync());
-            if(!isEmpty(properties.getFromUser())) rule = rule.fromUser(properties.getFromUser())
+            if(!isEmpty(properties.getFromUser())) rule = rule.fromUser(properties.getFromUser());
             if(!isEmpty(properties.getMsgType())) rule = rule.msgType(properties.getMsgType());
             if(!isEmpty(properties.getEvent())) rule = rule.event(properties.getEvent());
             if(!isEmpty(properties.getEventKey())) rule = rule.eventKey(properties.getEventKey());
