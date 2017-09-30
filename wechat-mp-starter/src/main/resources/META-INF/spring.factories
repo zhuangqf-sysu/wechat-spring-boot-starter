@@ -1,3 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
   com.zhuangqf.wechat.config.WxMpAutoConfiguration,\
-  com.zhuangqf.wechat.config.WxMpDefaultAutoConfiguration
+  com.zhuangqf.wechat.config.WxMpDefaultAutoConfiguration,\
+  com.zhuangqf.wechat.controller.MpController

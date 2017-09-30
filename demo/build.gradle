@@ -1,6 +1,25 @@
 group 'com.zhuangqf'
 version '1.0.0-SNAPSHOT'
 
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.7.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+
+jar {
+    baseName = 'wechat-demo'
+    version =  '0.1.0'
+}
+
 dependencies {
 //    compile fileTree(dir:'../libs',include:['*.jar'])
     compile fileTree(dir:'../wechat-mp-starter/build/libs',include:['*.jar'])
