@@ -17,8 +17,7 @@ public class WxMpMessageRouterFactory {
         return routers.get(name);
     }
 
-    public void addMpMessageRouter(String name, WxMpService service){
-        WxMpMessageRouter router = new WxMpMessageRouter(service);
+    public void addMpMessageRouter(String name, WxMpMessageRouter router){
         routers.put(name,router);
     }
 

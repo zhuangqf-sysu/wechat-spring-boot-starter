@@ -1,19 +1,16 @@
 wechat.mp.client:
-  - name: "zhuangqf"
+  - name: zhuangqf
+    router:
+      - default
     config:
-      appid: "wx757dad7ff56abe8a"
-      secret: "ebbc2d79f426e654647296e01fcdca8e"
-      token: "loveDaiDai"
+      appid: wx757dad7ff56abe8a
+      secret: ebbc2d79f426e654647296e01fcdca8e
+      token: loveDaiDai
 #      aesKey: "testAesKey"
 
-#wechat.mp.rules:
-#    - name: "test"
-#      end: true
-#      async: true
-#      fromUser: "zhuangqf"
-#      msgType: "type"
-#      event: "love"
-#      handlers:
-#          - "class1"
-#          - "class2"
+wechat.mp.rules:
+  "default":
+    end: true
+    handlers:
+      - com.zhuangqf.wechat.demo.handler.DefaultHandler
 

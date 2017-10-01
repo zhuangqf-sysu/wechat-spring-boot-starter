@@ -29,9 +29,6 @@ public class MpController {
     @Resource
     private WxMpMessageRouterFactory mpMessageRouterFactory;
 
-    @Resource
-    private List<WxMpMessageRuleProperties> rules;
-
 
     @RequestMapping("serviceFactory")
     public String serviceFactory(){
@@ -57,9 +54,5 @@ public class MpController {
     }
 
 
-    @RequestMapping("rules")
-    public String rules(){
-        return rules.toString();
-    }
 
 }

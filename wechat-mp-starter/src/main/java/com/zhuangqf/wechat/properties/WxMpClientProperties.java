@@ -35,4 +35,13 @@ public class WxMpClientProperties {
     public void setRouter(List<String> router) {
         this.router = router;
     }
+
+    @Override
+    public String toString() {
+        return "WxMpClientProperties{" +
+                "name='" + name + '\'' +
+                ", config=" + config +
+                ", router=" + router +
+                '}';
+    }
 }

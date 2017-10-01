@@ -14,9 +14,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 /**
  * Created by zhuangqf on 9/24/17.
@@ -34,7 +32,7 @@ public class WxMpDefaultAutoConfiguration {
     private WxMpProperties wxMpProperties;
 
     @Resource
-    private List<String> rules;
+    private Map<String,List<WxMpMessageRuleProperties>> mpRouters;
 
     @Bean
     public WxMpService mpService(){
@@ -53,15 +51,16 @@ public class WxMpDefaultAutoConfiguration {
             String name = properties.getName();
             WxMpService service = mpServiceFactory.getService(name);
             if(service==null) continue;
-            factory.addMpMessageRouter(name,service);
+            WxMpMessageRouter router = new WxMpMessageRouter(service);
+            router = setRules(router,mpRouters.get(name));
+            factory.addMpMessageRouter(name,router);
         }
         return factory;
     }
 
     private WxMpMessageRouter setRules(WxMpMessageRouter router,
-                                       List<String>ruleList){
+                                       List<WxMpMessageRuleProperties>rules){
         WxMpMessageRouterRule rule = router.rule();
-        List<WxMpMessageRuleProperties> rules = wxMpProperties.getRules();
         for(WxMpMessageRuleProperties properties:rules){
             if(!properties.isAsync()) rule = rule.async(properties.isAsync());
             if(!isEmpty(properties.getFromUser())) rule = rule.fromUser(properties.getFromUser());

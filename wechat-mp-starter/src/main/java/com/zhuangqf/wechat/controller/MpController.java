@@ -75,7 +75,14 @@ public class MpController {
             return outMessage.toEncryptedXml(wxMpService.getWxMpConfigStorage());
         }else{
             WxMpXmlMessage inMessage = WxMpXmlMessage.fromXml(request.getInputStream());
+            logger.info(inMessage.getContent());
             WxMpXmlOutMessage outMessage = wxMpMessageRouter.route(inMessage);
+            if(outMessage==null){
+                logger.info("ourMessage==null");
+                outMessage =  WxMpXmlOutMessage.TEXT().content("testing")
+                        .fromUser(inMessage.getToUser()).toUser(inMessage.getFromUser()).build();
+                logger.info(outMessage.toXml());
+            }
             return outMessage.toXml();
         }
     }

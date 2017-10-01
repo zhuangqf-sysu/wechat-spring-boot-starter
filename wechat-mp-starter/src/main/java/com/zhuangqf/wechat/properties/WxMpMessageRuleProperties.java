@@ -7,7 +7,6 @@ import java.util.List;
  */
 public class WxMpMessageRuleProperties {
 
-    private String name;
     private boolean end = true;
     private boolean async = true;
     private String fromUser;
@@ -21,15 +20,6 @@ public class WxMpMessageRuleProperties {
     private boolean reEnter = false;
     private List<String> handlers;
     private List<String> interceptors;
-
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public boolean isEnd() {
         return end;
@@ -138,7 +128,6 @@ public class WxMpMessageRuleProperties {
     @Override
     public String toString() {
         return "WxMpMessageRuleProperties{" +
-                "name='" + name + '\'' +
                 ", end=" + end +
                 ", async=" + async +
                 ", fromUser='" + fromUser + '\'' +

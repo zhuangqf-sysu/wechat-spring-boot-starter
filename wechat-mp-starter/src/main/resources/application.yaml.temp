@@ -11,7 +11,7 @@ wechat.mp.client:
 
 
 wechat.mp.rules:
-    - name:
+    name:
       end:
       async:
       fromUser:

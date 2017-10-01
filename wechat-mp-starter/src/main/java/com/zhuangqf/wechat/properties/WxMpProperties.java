@@ -1,10 +1,9 @@
 package com.zhuangqf.wechat.properties;
 
-import me.chanjar.weixin.mp.api.WxMpMessageRouter;
-import me.chanjar.weixin.mp.api.WxMpMessageRouterRule;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -14,7 +13,7 @@ import java.util.List;
 public class WxMpProperties {
 
     List<WxMpClientProperties> client;
-    List<WxMpMessageRuleProperties> rules;
+    Map<String,WxMpMessageRuleProperties> rules;
 
     public List<WxMpClientProperties> getClient() {
         return client;
@@ -24,11 +23,11 @@ public class WxMpProperties {
         this.client = client;
     }
 
-    public List<WxMpMessageRuleProperties> getRules() {
+    public Map<String, WxMpMessageRuleProperties> getRules() {
         return rules;
     }
 
-    public void setRules(List<WxMpMessageRuleProperties> rules) {
+    public void setRules(Map<String, WxMpMessageRuleProperties> rules) {
         this.rules = rules;
     }
 }
