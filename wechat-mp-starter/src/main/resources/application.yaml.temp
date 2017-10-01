@@ -1,4 +1,3 @@
-wechat.mp.url:
 wechat.mp.client:
   - name:
     config:

@@ -32,7 +32,6 @@ mpMessageRouterFactory：WxMpMessageRouter的集合，微信消息路由
 以下是application.yaml:
 
 ```
-wechat.mp.url:
 wechat.mp.client:
   - name:
     config:
@@ -63,7 +62,7 @@ wechat.mp.rules:
           - interceptorClass:
 ```
 
-`wechat.mp.url` 回调接口的url（全url = http://yourWebside/{wechat.mp.url}/{wechat.mp.client.name}）
+`wechat.mp.url` 回调接口的url（全url = http://yourWebside/wx/{wechat.mp.client.name}）
 
 `wechat.mp.client` 公众号相关配置，可以配置多个，默认第一个为mpService，具体bean可以通过`mpserviceFactory.getName({wechat.mp.client.name})获得
 
